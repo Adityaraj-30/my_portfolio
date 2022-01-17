@@ -1,31 +1,39 @@
 import React from "react";
 import "./mobile.css";
+import { FaRegTimesCircle } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
+import { FaPenSquare } from "react-icons/fa";
+import { FaLaptop } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
 function Mobile({ isOpen, setIsOpen }) {
   return (
     <div className="mobile">
       <div onClick={() => setIsOpen(!isOpen)} className="close-icon">
-        <i class="fi-rr-cross-circle"></i>
+        <FaRegTimesCircle className="option-icon" />
       </div>
       <div className="mobile-options">
         <div className="mobile-option">
           <a href="#projects">
-            <i class="fi-rr-edit-alt option-icon"></i>Projects
+            <FaPenSquare className="option-icon" /> Projects
           </a>
         </div>
         <div className="mobile-option">
           <a href="#skills">
-            <i class="fi-rr-laptop option-icon"></i>Skills
+            <FaLaptop className="option-icon" />
+            Skills
           </a>
         </div>
         <div className="mobile-option">
           <a href="#work">
             {" "}
-            <i class="fi-rr-briefcase option-icon"></i>Work
+            <FaBriefcase className="option-icon" />
+            Work
           </a>
         </div>
         <div className="mobile-option">
           <a href="#contact">
-            <i class="fi-rr-user option-icon"></i>Contact
+            <FaUser className="option-icon" />
+            Contact
           </a>
         </div>
       </div>
