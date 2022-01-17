@@ -1,26 +1,31 @@
 import React from "react";
 import "./web.css";
+import { FaBriefcase }  from "react-icons/fa";
+import { FaPenSquare } from "react-icons/fa";
+import { FaLaptop } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+
 function Web() {
   return (
     <div className="web">
       <div className="web-option">
         <a href="#projects">
-          <i class="fi-rr-edit-alt option-icon"></i>Projects
+          <FaPenSquare /> Projects
         </a>
       </div>
       <div className="web-option">
         <a href="#skills">
-          <i class="fi-rr-laptop option-icon"></i>Skills
+          <FaLaptop />Skills
         </a>
       </div>
       <div className="web-option">
         <a href="#work">
-          <i class="fi-rr-briefcase option-icon"></i>Work
+          <FaBriefcase />Work
         </a>
       </div>
       <div className="web-option">
         <a href="#contact">
-          <i class="fi-rr-user option-icon"></i>Contact
+          < FaUser />Contact
         </a>
       </div>
     </div>
