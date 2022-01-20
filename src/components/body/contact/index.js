@@ -2,7 +2,7 @@ import React from "react";
 import "./contact.css";
 import SocialContact from "../../common/social-contact/index";
 import Separator from "../../common/separator";
-
+import { FaCloudDownloadAlt } from "react-icons/fa";
 function Contact() {
   return (
     <div className="contact">
@@ -13,7 +13,12 @@ function Contact() {
           <p>Want to get in touch? Contact me on any of the platform</p>
           <SocialContact />
         </div>
-        
+        <div className="download">
+          <a download href={require("../../../assets/resume.pdf")}>
+            <FaCloudDownloadAlt />
+            Download Resume
+          </a>
+        </div>
       </div>
     </div>
   );

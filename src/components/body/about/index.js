@@ -1,5 +1,4 @@
-import React from "react";
-import Separator from "../../common/separator";
+import React from "react"
 import SocialContact from "../../common/social-contact";
 import "./about.css";
 function About() {
@@ -12,13 +11,12 @@ function About() {
           experimenting with the web.
         </div>
             <div className="about-photo">
-                <img src={require ('../../../assets/dp.jpg')} alt="dp" className="picture" /> 
+                <img src={require ('../../../assets/dp.jpeg')} alt="dp" className="picture" /> 
             </div>
       </div>
       <SocialContact />
-      <Separator />
     </div>
   );
 }
 
-export default About;
+export default About

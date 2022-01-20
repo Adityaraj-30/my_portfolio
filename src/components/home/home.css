@@ -1,7 +1,9 @@
 html{
     scroll-behavior: smooth;
 }
-
+body {
+  font-family: "Work Sans", sans-serif;
+}
 .home{
     display: flex;
     flex-direction: column;
